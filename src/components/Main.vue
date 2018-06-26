@@ -254,8 +254,6 @@ function requestData (start, to, onSuccess, onFail) {
   margin: auto;
 }
 
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:400,500'); */
-
 @media (min-width: 768px) {
   .main {
     padding: auto;
