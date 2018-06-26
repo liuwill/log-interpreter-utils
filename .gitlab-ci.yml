@@ -1,0 +1,40 @@
+node-build:
+  image: node:7.6
+  stage: test
+  before_script:
+  - ci/install-chrome
+  script:
+  - npm install
+  - xvfb-run -a npm test
+  after_script:
+  - npm i element-theme -g
+  - et
+  - npm run build
+  artifacts:
+    paths:
+      - dist/
+  only:
+    - feature-gitlab
+    - master
+
+  cache:
+    paths:
+      - node_modules/
+  tags:
+    - docker
+
+pages:
+  stage: deploy
+  dependencies:
+    - node-build
+  script:
+    - mv dist/ public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 30 days
+  only:
+    - feature-gitlab
+    - master
+  tags:
+    - docker

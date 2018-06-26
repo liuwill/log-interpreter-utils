@@ -1,0 +1,104 @@
+body {
+  font-family: PingFang SC UltraLight,PingFangSC-Light,Microsoft YaHei,Tahoma,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+}
+
+body {
+  background-color: rgb(246, 246, 246);
+  margin: 0;
+}
+
+.search-form .el-input__inner {
+  color: #76858c;
+  border: 1px solid #edf0f2;
+  border-radius: 3px;
+}
+
+/* 页面主框架 */
+.general-inner-content {
+  padding: 24px;
+}
+
+.module-breadcrumb {
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+/* 页面主框架 */
+
+.el-menu-main {
+  background: transparent;
+  color: #76858c;
+}
+.el-menu-main .el-menu-item, .el-menu-main .el-submenu{
+  color: #76858c;
+  border: none;
+}
+.el-menu-main .el-submenu .el-submenu__title{
+  background: transparent;
+  border: none;
+}
+.el-menu-main .el-menu-item.is-active{
+  color: #3d5159;
+}
+.el-menu-main .el-menu-item:hover, .el-menu-main .el-submenu:hover{
+  color: #0e2026;
+  border-bottom: 0;
+  background-color: transparent;
+}
+.el-menu-main.el-menu--horizontal > .el-submenu:hover .el-submenu__title{
+  border-bottom: 0;
+}
+
+.btn-zen {
+  color: #0e2026;
+  background-color: #f7f9fa;
+  border-color: #f7f9fa;
+  border-radius: 3px;
+}
+
+.btn-zen:hover, .btn-zen:focus {
+  color: #0e2026;
+  background-color: #edf0f2;
+  border-color: #edf0f2;
+}
+
+a {
+  text-decoration: none;
+}
+.vp-btn {
+  font-size: 14px;
+  text-align: center;
+  border-radius: 2px;
+  border-color: transparent;
+  transition: all .5s;
+}
+
+.vp-btn-hollow {
+  color: #3574e4;
+  border: 1px solid #3574e4;
+  padding: 5px 16px;
+}
+.vp-btn-hollow.trasparent{
+  background-color: transparent;
+}
+.vp-btn-hollow:hover {
+    color: #fff;
+    background-color: #3077f3;
+    cursor: pointer;
+}
+
+.vp-btn-blue {
+
+}
+
+.el-button>a {
+  color: #fff;
+}
